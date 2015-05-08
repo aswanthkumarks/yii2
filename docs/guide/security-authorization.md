@@ -207,7 +207,7 @@ return [
 The `authManager` can now be accessed via `\Yii::$app->authManager`.
 
 > Tip: By default, [[yii\rbac\PhpManager]] stores RBAC data in files under `@app/rbac/` directory. Make sure the directory
-  and all the files in it are writable by the Web server process if permissions hierarchy needs to be changed online.
+  and all the files in it are writable by the Web server process if permissions hierarchy needs to be changed online. 
 
 #### configuring authManager with `DbManager`
 
@@ -295,6 +295,8 @@ class RbacController extends Controller
     }
 }
 ```
+
+Tip: For using console command authManager should also be configured in config/console.php
 
 After executing the command with `yii rbac/init` we'll get the following hierarchy:
 
